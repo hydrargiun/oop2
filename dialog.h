@@ -1,3 +1,3 @@
 namespace oop1 {
-    void dialog();
+    void dialog(Strof s);
 }
