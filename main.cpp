@@ -9,20 +9,29 @@ int main() {
     std::cout << "введите а" <<std::endl;
     std::cin >> a;
     Strof strof(a);
-
+    //strof.Set_A(a);
+    //strof.Set_x(x);
+    while(1) {
         try {
             dialog(strof);
 
         }
-            catch (std::bad_alloc &ba) {
-                std::cout << "Error in allocating memory: " << ba.what() << std::endl;
+        catch (int a) {
+            if (a == 0){
+            std::cout << "bye";
+            break;
             }
-            catch (std::exception &ex) {
-                std::cout << "Exception detected: " << ex.what() << std::endl;
+            if (a == -1){
+                int z;
+                int y;
+                std::cout << "введите а" <<std::endl;
+                std::cin >> z;
+                strof = strof.Set_A(z);
             }
-            catch (...) {
-                std::cout << "Unknown error occured!" << std::endl;
-            }
+
+        }
+    }
+
 
     return 0;
 }
