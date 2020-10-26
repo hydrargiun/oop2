@@ -3,4 +3,4 @@ project(untitled)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(oop2 main.cpp Strof.h Strof.cpp dialog.cpp dialog.h)
+add_executable(oop2 main.cpp Strof.h Strof.cpp dialog.cpp dialog.h getnum.h getnum.h)
