@@ -63,8 +63,9 @@ namespace oop2{
         this->a = a;
         return *this;
     }
-    void Strof::Get_A(){
+    double Strof::Get_A(){
         std::cout<< "a = " <<this->a<<std::endl;
+        return this->a;
 
     }
     double Strof::Chestno() const{

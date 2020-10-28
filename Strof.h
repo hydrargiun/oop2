@@ -8,7 +8,7 @@ namespace oop2 {
         Strof();
         Strof(double a);
         Strof &Set_A(double a);
-        void Get_A();
+        double Get_A();
         double GetYDecart1(double x) const;
         double GetYDecart2(double x) const;
         double Volume() const;

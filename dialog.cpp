@@ -16,9 +16,10 @@ namespace oop2{
              std::cout << "6. Смена ппараметра" << std::endl;
 
              int pt;
-             std::cin >> pt;
+             pt = getNum<double>();
              if (pt < 0 || pt > 7){
                  std::cout << "wrong number"<< std::endl;
+                 throw std::invalid_argument("wrong input");
                  continue;
              }
              if (pt == 0) {
@@ -26,7 +27,7 @@ namespace oop2{
              }
 
              if (pt == 1) {
-                 s.Get_A();
+                 double c = s.Get_A();
                  std::cout << "Vvedite x" << std::endl;
                  int x;
                  x = getNum<double>();
